@@ -803,6 +803,12 @@ img {
 	background-color: var(--modal-bg-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
+	transition: fill 250ms var(--cubic);
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+	fill: var(--accent-color);
 }
 
 .modal-title {
@@ -915,7 +921,7 @@ img {
 
 .policy-icon {
 	fill: #ffffff;
-	border: 1px solid #212121;
+	border: 2px solid #212121;
 	border-radius: 2px;
 	transition: border-color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
