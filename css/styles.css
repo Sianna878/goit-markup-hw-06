@@ -12,6 +12,7 @@
 	--logo-part-color: #000000;
 	--hero-title-color: #ffffff;
 	--btn-text-color: #ffffff;
+	--activity-text-color: #ffffff;
 	--logo-footer-color: #ffffff;
 	--footer-text-color: #ffffff;
 	--contact-footer-color: rgba(255, 255, 255, 0.6);
@@ -135,7 +136,7 @@ img {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1.1923;
+	line-height: calc(31 / 26);
 	letter-spacing: 0.03em;
 	color: var(--accent-color);
 }
@@ -150,6 +151,8 @@ img {
 	padding-bottom: 25px;
 }
 
+/* навігація сайту */
+
 .link-nav,
 .info-link {
 	display: flex;
@@ -159,7 +162,8 @@ img {
 .link-nav {
 	position: relative;
 	font-weight: 500;
-	line-height: 1.1428;
+	font-size: 14px;
+    line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 	transition: color 250ms var(--cubic);
@@ -193,9 +197,12 @@ img {
 	transform: scaleX(1);
 }
 
+/* контакти в header */
+
 .info-link {
 	font-weight: 500;
-	line-height: 1.1428;
+	font-size: 14px;
+    line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 	color: var(--main-text-color);
 	align-items: center;
@@ -237,13 +244,13 @@ img {
 
 .title-hero {
 	width: 696px;
+	margin-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 1.3636;
+	line-height: calc(60 / 44);
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--hero-title-color);
-	margin-bottom: 30px;
 }
 
 .btn-hero {
@@ -252,7 +259,7 @@ img {
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 1.875;
+	line-height: calc(30 / 16);
 	letter-spacing: 0.06em;
 	color: var(--btn-text-color);
 	background-color: var(--accent-color);
@@ -288,13 +295,12 @@ img {
 }
 
 .benefit-title {
+	margin-bottom: 10px;
 	font-size: 14px;
-	line-height: 1.1428;
+	line-height: calc(16 / 14);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--secondary-text-color);
-
-	margin-bottom: 10px;
 }
 
 .benefit-text {
@@ -309,12 +315,12 @@ img {
 }
 
 .activity-title {
+	margin-bottom: 50px;
 	font-size: 36px;
-	line-height: 1.1666;
+	line-height: calc(42 / 36);
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
-	margin-bottom: 50px;
 }
 
 .activity-list {
@@ -324,6 +330,7 @@ img {
 
 .activity-item {
 	position: relative;
+	flex-basis: calc((100%-60px) / 3);
 }
 
 .activity-item-wrap {
@@ -345,7 +352,7 @@ img {
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: var(--activity-text-color);
 }
 
 /* секція команда */
@@ -355,13 +362,12 @@ img {
 }
 
 .team-title {
+	margin-bottom: 50px;
 	font-size: 36px;
-	line-height: 1.1666;
+	line-height: calc(42 / 36);
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
-
-	margin-bottom: 50px;
 }
 
 .team-list {
@@ -377,28 +383,27 @@ img {
 }
 
 .team-description {
-	text-align: center;
 	padding: 30px 32px;
+	text-align: center;
 }
 
 .team-member {
+	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.1875;
+	line-height: calc(19 / 16);
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
-
-	margin-bottom: 10px;
 }
 
 .team-specialty {
+	margin-bottom: 16px;
 	font-size: 16px;
-	line-height: 1.1875;
+	line-height: calc(19 / 16);
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
-	margin-bottom: 16px;
 }
 
 .soc-network-list {
@@ -435,12 +440,12 @@ img {
 /* секція клієнти */
 
 .clients-title {
+	margin-bottom: 50px;
 	font-size: 36px;
-	line-height: 42px;
+	line-height: calc(42 / 36);
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
-	margin-bottom: 50px;
 }
 
 .clients-list {
@@ -449,17 +454,17 @@ img {
 }
 
 .client-item {
-	flex-basis: calc((100% - 150px) / 6);
 	width: 170px;
 	height: 92px;
+	flex-basis: calc((100% - 150px) / 6);
 }
 
 /* flex-basis: calc((100% - кіл-ть маржинів в рядку * значення маржина) / кіл-ть елементів в рядку); */
 
 .client-link {
-	display: flex;
 	width: 100%;
 	height: 100%;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid var(--border-clients-color);
@@ -483,24 +488,24 @@ img {
 /* фільтр-кнопки */
 
 .filter-set {
+	margin-bottom: 50px;
 	display: flex;
-	gap: 8px;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 50px;
+	gap: 8px;
 }
 
 .filter-btn {
+	padding: 6px 22px;
 	display: block;
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.625;
+	line-height: calc(26 / 16);
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
 	background-color: var(--filter-btn-bg-color);
-	padding: 6px 22px;
 	transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
@@ -567,16 +572,16 @@ img {
 }
 
 .card-heading {
+	margin-bottom: 4px;
 	font-size: 18px;
-	line-height: 2;
+	line-height: calc(36 / 18);
 	letter-spacing: 0.06em;
 	color: var(--secondary-text-color);
-	margin-bottom: 4px;
 }
 
 .project-doing {
 	font-size: 16px;
-	line-height: 1.875;
+	line-height: calc(30 / 16);
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
 }
@@ -616,8 +621,8 @@ img {
 }
 
 .link-contact {
-	font-style: normal;
-	line-height: 1.7142;
+	font-size: 14px;
+    line-height: calc(24 / 14);
 	color: var(--contact-footer-color);
 	transition: color 250ms var(--cubic);
 }
@@ -642,7 +647,7 @@ img {
 	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 1.1428;
+	line-height: calc(16 / 14);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--footer-text-color);
@@ -659,14 +664,14 @@ img {
 }
 
 .social-network-link {
-	display: flex;
 	width: 100%;
 	height: 100%;
-	background-color: var(--bg-footer-icons);
-	border-radius: 50%;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: var(--secondary-social-color);
+	background-color: var(--bg-footer-icons);
+	border-radius: 50%;
 	transition: background-color 250ms var(--cubic);
 }
 
@@ -705,12 +710,11 @@ img {
 	width: 358px;
 	height: 50px;
 	padding-left: 16px;
+	font-size: 16px;
+	line-height: calc(20 / 16);
+	letter-spacing: 0.03em;
 	background-color: inherit;
 	outline: transparent;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.25;
-	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -910,11 +914,11 @@ img {
 }
 
 .policy-label {
+	margin-bottom: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
-	margin-bottom: 30px;
 	font-size: 14px;
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
