@@ -33,6 +33,7 @@
 	--project-overlay-color: #ffffff;
 	--modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	--overlay-bg-color: rgba(33, 150, 243, 0.9);
+    --main-form-color: #757575;
 }
 
 body {
@@ -840,9 +841,13 @@ img {
 	margin-bottom: 20px;
 }
 
-.form-label-text {
-	display: block;
-	margin-bottom: 4px;
+.form-label {
+    margin-bottom: 4px;
+	display: inline-block;
+    font-size: 12px;
+	line-height: calc(14 / 12);
+	letter-spacing: 0.01em;
+	color: var(--main-form-color);
 }
 
 .form-input-wrap {
@@ -851,16 +856,16 @@ img {
 
 .form-input {
 	width: 100%;
-	left: 576px;
-	top: 314px;
+	padding: 11px 12px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	outline: transparent;
+	transition: border-color 250ms var(--cubic);
 }
 
 .form-user-input {
 	height: 40px;
-	padding: 11px 40px;
+	padding-left: 42px;
 }
 
 .form-input::placeholder {
@@ -868,8 +873,7 @@ img {
 	font-size: 12px;
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
-	color: #757575;
-	transition: border-color 250ms var(--cubic);
+	color: var(--main-form-color);
 }
 
 .form-input:focus {
@@ -889,15 +893,11 @@ img {
 }
 
 .form-user-comment {
-	width: 100%;
 	height: 120px;
 	padding: 12px 16px;
-	left: 576px;
-	top: 518px;
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
 	resize: none;
-	outline: transparent;
+	transition: border-color 250ms var(--cubic);
+
 }
 
 .form-user-comment::placeholder {
@@ -906,7 +906,6 @@ img {
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
-	transition: border-color 250ms var(--cubic);
 }
 
 .form-user-comment:focus {
