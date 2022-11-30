@@ -33,14 +33,12 @@
 	--project-overlay-color: #ffffff;
 	--modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	--overlay-bg-color: rgba(33, 150, 243, 0.9);
-    --main-form-color: #757575;
+	--main-form-color: #757575;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
-	font-size: 14px;
-	letter-spacing: 0.03em;
 	background-color: var(--main-bg-color);
 	color: var(--main-text-color);
 }
@@ -117,9 +115,9 @@ address {
 }
 
 .navigation {
+	margin-right: auto;
 	display: flex;
 	align-items: center;
-	margin-right: auto;
 }
 
 .header-nav {
@@ -168,7 +166,7 @@ address {
 	position: relative;
 	font-weight: 500;
 	font-size: 14px;
-    line-height: calc(16 / 14);
+	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 	transition: color 250ms var(--cubic);
@@ -207,7 +205,7 @@ address {
 .info-link {
 	font-weight: 500;
 	font-size: 14px;
-    line-height: calc(16 / 14);
+	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 	color: var(--main-text-color);
 	align-items: center;
@@ -261,7 +259,6 @@ address {
 .btn-hero {
 	margin: 0 auto;
 	padding: 10px 32px;
-	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: calc(30 / 16);
@@ -503,7 +500,6 @@ address {
 .filter-btn {
 	padding: 6px 22px;
 	display: block;
-	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: calc(26 / 16);
@@ -627,7 +623,7 @@ address {
 
 .link-contact {
 	font-size: 14px;
-    line-height: calc(24 / 14);
+	line-height: calc(24 / 14);
 	color: var(--contact-footer-color);
 	transition: color 250ms var(--cubic);
 }
@@ -692,7 +688,7 @@ address {
 /* форма в footer */
 
 .footer-form-field {
-	display: block
+	display: block;
 }
 
 .sign-title {
@@ -846,8 +842,8 @@ address {
 }
 
 .form-label {
-    margin-bottom: 4px;
-    font-size: 12px;
+	margin-bottom: 4px;
+	font-size: 12px;
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
 	color: var(--main-form-color);
@@ -859,7 +855,6 @@ address {
 
 .form-input {
 	width: 100%;
-	padding: 11px 12px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	outline: transparent;
@@ -868,7 +863,7 @@ address {
 
 .form-user-input {
 	height: 40px;
-	padding-left: 42px;
+	padding: 11px 12px 11px 42px;
 }
 
 .form-input::placeholder {
@@ -899,7 +894,6 @@ address {
 	height: 120px;
 	padding: 12px 16px;
 	resize: none;
-	transition: border-color 250ms var(--cubic);
 }
 
 .form-user-comment::placeholder {
@@ -936,7 +930,6 @@ address {
 
 .checkbox-link {
 	position: relative;
-	font-weight: 400;
 	font-size: 14px;
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
@@ -972,5 +965,5 @@ address {
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
-	background-color: var(--secondary-accent-color)
+	background-color: var(--secondary-accent-color);
 }
