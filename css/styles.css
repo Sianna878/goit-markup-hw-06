@@ -306,7 +306,9 @@ address {
 }
 
 .benefit-text {
-	line-height: 1.7142;
+	font-size: 14px;
+	line-height: calc(24 / 14);
+	letter-spacing: 0.03em;
 	color: var(--main-text-color);
 }
 
@@ -897,7 +899,6 @@ address {
 }
 
 .form-user-comment::placeholder {
-	font-weight: 400;
 	font-size: 12px;
 	line-height: calc(14 / 12);
 	letter-spacing: 0.01em;
