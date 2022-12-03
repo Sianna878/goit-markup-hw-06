@@ -833,7 +833,6 @@ address {
 /* форма в модалці */
 
 .form-field {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 10px;
@@ -888,7 +887,7 @@ address {
 	transition: fill 250ms var(--cubic);
 }
 
-.form-input:focus + .form-icon {
+.form-input:focus + .form-icon, .form-input:hover + .form-icon, .form-input:not(:placeholder-shown) + .form-icon {
 	fill: var(--accent-color);
 }
 
@@ -904,6 +903,8 @@ address {
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
 }
+
+/* checkbox */
 
 .policy-label {
 	margin-bottom: 30px;
@@ -946,6 +947,7 @@ address {
 	height: 1px;
 	background-color: var(--accent-color);
 }
+/* кнопка форми в модалці */
 
 .modal-form-btn {
 	margin: 0 auto;
